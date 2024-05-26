@@ -23,7 +23,7 @@ let isLimit = (isPrems || isOwner ? limit : limit) * 1012 < filesize
 await conn.reply(m.chat, `*Nombre:* ${filename}\n*Peso:*  ${filesizeH}\n*Tipo:* ${ext}\n*Subido:* ${aploud}`, m, fake, )
     
 if(!isLimit) await conn.sendFile(m.chat, url, filename, '', m, null, { mimetype: ext, asDocument: true })
-m.react(done)
+
 } catch (e) {
 conn.reply(m.chat, `🚫 𝐄𝐑𝐑𝐎𝐑 🚫 *᥆ᥴᥙrrі᥆ ᥙᥒ 𝖿ᥲᥣᥣ᥆*`, m, fake, )
 console.log(e)}
