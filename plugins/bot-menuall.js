@@ -3,37 +3,38 @@ import { join } from 'path'
 import fetch from 'node-fetch' 
 import { xpRange } from '../lib/levelling.js' 
 
-  let tags = { 
-  'main': '𝐈 𝐍 𝐅 𝐎', 
-  'bot': '𝐁 𝐎 𝐓', 
-  'juegos': '𝐉 𝐔 𝐄 𝐆 𝐎 𝐒', 
-  'imagenes': '𝐈 𝐌 𝐀 𝐆 𝐄 𝐍 𝐄 𝐒', 
-  'grupo': '𝐆 𝐑 𝐔 𝐏 𝐎 𝐒', 
-  'frases': '𝐅 𝐑 𝐀 𝐒 𝐄 𝐒', 
-  'descargas': '𝐃 𝐄 𝐒 𝐂 𝐀 𝐑 𝐆 𝐀 𝐒', 
-  'nable': '𝐎 𝐍 / 𝐎 𝐅 𝐅', 
-  'internet': '𝐈 𝐍 𝐓 𝐄 𝐑 𝐍 𝐄 𝐓', 
-  'anime': '𝐀 𝐍 𝐈 𝐌 𝐄', 
-  'nable': '𝐎 𝐍 - 𝐎 𝐅 𝐅', 
-  'premium': '𝐏 𝐑 𝐄 𝐌 𝐈 𝐔 𝐌', 
-  'downloader': '𝐃 𝐄 𝐒 𝐂 𝐀 𝐑 𝐆 𝐀 𝐒', 
-  'info': '𝐈 𝐍 𝐅 𝐎', 
-  'owner': '𝐎 𝐖 𝐍 𝐄 𝐑', 
-  'nsfw': '𝐍 𝐒 𝐅 𝐖', 
-  'database': '𝐃 𝐀 𝐓 𝐀 𝐁 𝐀 𝐒 𝐄',
-  'rg': '𝐑 𝐄 𝐆 𝐈 𝐒 𝐓 𝐑 𝐎',
-  'tools': '𝐇 𝐄 𝐑 𝐑 𝐀 𝐌 𝐈 𝐄 𝐍 𝐓 𝐀 𝐒', 
-  'xp': '𝐄 𝐗 𝐏',
-  'imagene': '𝐈 𝐌 𝐀 𝐆 𝐄 𝐍 𝐄 𝐒',
-  'transformador': '𝐂 𝐎 𝐍 𝐕 𝐄 𝐑 𝐓 𝐈 𝐃 𝐎 𝐑 𝐄 𝐒',
-  'audio': '𝐀 𝐔 𝐃 𝐈 𝐎',
-  'sticker': '𝐒 𝐓 𝐈 𝐂 𝐊 𝐄 𝐑 𝐒', 
-  'ai': '𝐈 𝐀',
-  'rpg': '𝐑 𝐏 𝐆',
-  'jadibot': '𝐒 𝐔 𝐁 - 𝐁 𝐎 𝐓',
-  'menu': '𝐌 𝐄 𝐍 𝐔',
-  'own': '𝐎 𝐖 𝐍 𝐄 𝐑',
-}
+  let tags = { 
+  'main': '𝐈 𝐍 𝐅 𝐎', 
+  'bot': '𝐁 𝐎 𝐓', 
+  'juegos': '𝐉 𝐔 𝐄 𝐆 𝐎 𝐒', 
+  'imagenes': '𝐈 𝐌 𝐀 𝐆 𝐄 𝐍 𝐄 𝐒', 
+  'grupo': '𝐆 𝐑 𝐔 𝐏 𝐎 𝐒', 
+  'frases': '𝐅 𝐑 𝐀 𝐒 𝐄 𝐒', 
+  'descargas': '𝐃 𝐄 𝐒 𝐂 𝐀 𝐑 𝐆 𝐀 𝐒', 
+  'nable': '𝐎 𝐍 / 𝐎 𝐅 𝐅', 
+  'internet': '𝐈 𝐍 𝐓 𝐄 𝐑 𝐍 𝐄 𝐓', 
+  'anime': '𝐀 𝐍 𝐈 𝐌 𝐄', 
+  'nable': '𝐎 𝐍 - 𝐎 𝐅 𝐅', 
+  'premium': '𝐏 𝐑 𝐄 𝐌 𝐈 𝐔 𝐌', 
+  'downloader': '𝐃 𝐄 𝐒 𝐂 𝐀 𝐑 𝐆 𝐀 𝐒', 
+  'info': '𝐈 𝐍 𝐅 𝐎', 
+  'owner': '𝐎 𝐖 𝐍 𝐄 𝐑', 
+  'nsfw': '𝐍 𝐒 𝐅 𝐖', 
+  'database': '𝐃 𝐀 𝐓 𝐀 𝐁 𝐀 𝐒 𝐄',
+  'rg': '𝐑 𝐄 𝐆 𝐈 𝐒 𝐓 𝐑 𝐎',
+  'tools': '𝐇 𝐄 𝐑 𝐑 𝐀 𝐌 𝐈 𝐄 𝐍 𝐓 𝐀 𝐒', 
+  'xp': '𝐄 𝐗 𝐏',
+  'imagene': '𝐈 𝐌 𝐀 𝐆 𝐄 𝐍 𝐄 𝐒',
+  'transformador': '𝐂 𝐎 𝐍 𝐕 𝐄 𝐑 𝐓 𝐈 𝐃 𝐎 𝐑 𝐄 𝐒',
+  'audio': '𝐀 𝐔 𝐃 𝐈 𝐎',
+  'sticker': '𝐒 𝐓 𝐈 𝐂 𝐊 𝐄 𝐑 𝐒', 
+  'ai': '𝐈 𝐀',
+  'rpg': '𝐑 𝐏 𝐆',
+  'jadibot': '𝐒 𝐔 𝐁 - 𝐁 𝐎 𝐓',
+  'menu': '𝐌 𝐄 𝐍 𝐔',
+  'own': '𝐎 𝐖 𝐍 𝐄 𝐑',
+} 
+
 const defaultMenu = { 
   before: `
 ╭════ ＩＮＦＯＢＯＴ ══════════ ⪩
@@ -52,14 +53,14 @@ const defaultMenu = {
 ││◉ *Nɪᴠᴇʟ* : %level
 │╰─────────────────
 ╰─══════════════ ⪩
-%readmore
-         *乂 ⺀ ʟɪꜱᴛᴀ - ᴄᴏᴍᴀɴᴅᴏꜱ ⺀ 乂*
-`.trimStart(),
-  header: '╭⁺₊⋆•̩̩͙*˚⁺‧͙⁺˚*•̩̩͙✩•̩̩͙*˚⁺‧͙ %category ⁺₊⋆•̩̩͙*˚⁺‧͙⁺˚*•̩̩͙✩•̩̩͙*˚⁺‧͙╮\n> ╭～●～●～●●～●～',
-  body: '> │➻ *%cmd*\n',
-  footer: '> ╰～●～●～●●～●～\n╰═• ೋ✧๑🌟️๑✧ೋ ≪•◦ ❈ ◦•≫╯',
-  after: '',
-}
+%readmore 
+         *乂 ⺀ ʟɪꜱᴛᴀ - ᴄᴏᴍᴀɴᴅᴏꜱ ⺀ 乂* 
+`.trimStart(), 
+  header: '╭⁺₊⋆•̩̩͙*˚⁺‧͙⁺˚*•̩̩͙✩•̩̩͙*˚⁺‧͙ %category ⁺₊⋆•̩̩͙*˚⁺‧͙⁺˚*•̩̩͙✩•̩̩͙*˚⁺‧͙╮\n> ╭～●～●～●●～●～', 
+  body: '> │➻ *%cmd*\n', 
+  footer: '> ╰～●～●～●●～●～\n╰═• ೋ✧๑🌟️๑✧ೋ ≪•◦ ❈ ◦•≫╯', 
+  after: '', 
+} 
 
 let handler = async (m, { conn, usedPrefix: _p, __dirname }) => { 
   try { 
@@ -72,6 +73,32 @@ let handler = async (m, { conn, usedPrefix: _p, __dirname }) => {
     // d.getTimeZoneOffset() 
     // Offset -420 is 18.00 
     // Offset    0 is  0.00 
+    // Offset  420 is  7.00 
+    let weton = ['Pahing', 'Pon', 'Wage', 'Kliwon', 'Legi'][Math.floor(d / 84600000) % 5] 
+    let week = d.toLocaleDateString(locale, { weekday: 'long' }) 
+    let date = d.toLocaleDateString(locale, { 
+      day: 'numeric', 
+      month: 'long', 
+      year: 'numeric' 
+    }) 
+    let dateIslamic = Intl.DateTimeFormat(locale + '-TN-u-ca-islamic', { 
+      day: 'numeric', 
+      month: 'long', 
+      year: 'numeric' 
+    }).format(d) 
+    let time = d.toLocaleTimeString(locale, { 
+      hour: 'numeric', 
+      minute: 'numeric', 
+      second: 'numeric' 
+    }) 
+    let _uptime = process.uptime() * 1000 
+    let _muptime 
+    if (process.send) { 
+      process.send('uptime') 
+      _muptime = await new Promise(resolve => { 
+        process.once('message', resolve) 
+        setTimeout(resolve, 1000) 
+      }) * 1000 
     } 
     let muptime = clockString(_muptime) 
     let uptime = clockString(_uptime) 
@@ -139,12 +166,12 @@ let handler = async (m, { conn, usedPrefix: _p, __dirname }) => {
 
 const pp = await conn.profilePictureUrl(conn.user.jid).catch(_ => 'https://telegra.ph/file/24fa902ead26340f3df2c.png');
 
-await conn.reply(m.chat, '✰【𝐄𝐧𝐯𝐢𝐚𝐧𝐝𝐨 𝐄𝐥 𝐌𝐞𝐧𝐮】✰ . . .*', fkontak, { contextInfo:{ forwardingScore: 2022, isForwarded: true, externalAdReply: {title: '✰ 𝐁𝐚𝐢𝐥𝐞𝐲 𝐁𝐨𝐭 - 𝐌𝐃 ✰', body: '👋 Hola ' + name, sourceUrl: global.md, thumbnail: await (await fetch(pp)).buffer() }}})
+await conn.reply(m.chat, '✰【𝐄𝐧𝐯𝐢𝐚𝐧𝐝𝐨 𝐄𝐥 𝐌𝐞𝐧𝐮】✰ . . .*', fkontak, { contextInfo:{ forwardingScore: 2022, isForwarded: true, externalAdReply: {title: '🍁 𝓓𝓘𝓐𝓑𝓛𝓐 - 𝓑𝓞𝓣 - 𝓜𝓓 🌸', body: '👋 Hola ' + name, sourceUrl: global.md, thumbnail: await (await fetch(pp)).buffer() }}})
     
-     let pp1 = 'https://telegra.ph/file/33d3e7b5d8d455e03136c.mp4'
-     let pp2 = 'https://telegra.ph/file/ea6aba5e9c5b92105d911.mp4'
+    let pp1 = 'https://telegra.ph/file/33d3e7b5d8d455e03136c.mp4'
+    let pp2 = 'https://telegra.ph/file/ea6aba5e9c5b92105d911.mp4'
 
-    m.react('🪷') 
+    m.react('🌸') 
     conn.sendMessage(m.chat, { video: { url: [pp1, pp2].getRandom() }, gifPlayback: true, caption: text.trim(), mentions: [m.sender] }, { quoted: m }) 
 
   } catch (e) { 
@@ -155,7 +182,7 @@ await conn.reply(m.chat, '✰【𝐄𝐧𝐯𝐢𝐚𝐧𝐝𝐨 𝐄𝐥 𝐌�
 
 handler.help = ['menu'] 
 handler.tags = ['main'] 
-handler.command = ['menu', 'help', 'allmenu'] 
+handler.command = ['menu', 'help', 'allmenu', 'menù'] 
 handler.register = true 
 export default handler 
 
@@ -199,3 +226,4 @@ switch(hour){
   case 23: hour = 'Bᴜᴇɴᴀs Nᴏᴄʜᴇs 🌃'; break; 
 } 
   var greeting = hour;
+
