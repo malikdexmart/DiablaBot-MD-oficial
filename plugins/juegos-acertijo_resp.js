@@ -13,7 +13,6 @@ let json = JSON.parse(JSON.stringify(this.tekateki[id][1]))
 if (m.text.toLowerCase() == json.response.toLowerCase().trim()) {
 global.db.data.users[m.sender].exp += this.tekateki[id][2]
 conn.reply(m.chat, `✅ *Respuesta correcta*\n+${this.tekateki[id][2]} Exp`, m, fake, )
-m.react(done)
 clearTimeout(this.tekateki[id][3])
 delete this.tekateki[id]
 } else if (similarity(m.text.toLowerCase(), json.response.toLowerCase().trim()) >= threshold) conn.reply(m.chat, `🎌 *Casi lo logras*`, m, fake, )
