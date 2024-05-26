@@ -1,6 +1,3 @@
-
-216 lines (182 loc) · 9.05 KB
-💬 Code Chat
 import fetch from 'node-fetch'
 import yts from 'yt-search'
 import ytdl from 'ytdl-core'
