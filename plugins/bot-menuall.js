@@ -52,14 +52,14 @@ const defaultMenu = {
 ││◉ *Nɪᴠᴇʟ* : %level
 │╰─────────────────
 ╰─══════════════ ⪩
-%readmore 
-         *乂 ⺀ ʟɪꜱᴛᴀ - ᴄᴏᴍᴀɴᴅᴏꜱ ⺀ 乂* 
-`.trimStart(), 
-  header: '╭═• ೋ✧๑ %category ๑✧ೋ •═╮\n> ╭─────────────────', 
-  body: '> │◉ *%cmd*\n', 
-  footer: '> ╰─────────────────\n╰═• ೋ✧๑🌟️๑✧ೋ •════╯', 
-  after: '', 
-} 
+%readmore
+         *乂 ⺀ ʟɪꜱᴛᴀ - ᴄᴏᴍᴀɴᴅᴏꜱ ⺀ 乂*
+`.trimStart(),
+  header: '╭⁺₊⋆•̩̩͙*˚⁺‧͙⁺˚*•̩̩͙✩•̩̩͙*˚⁺‧͙ %category ⁺₊⋆•̩̩͙*˚⁺‧͙⁺˚*•̩̩͙✩•̩̩͙*˚⁺‧͙╮\n> ╭～●～●～●●～●～',
+  body: '> │➻ *%cmd*\n',
+  footer: '> ╰～●～●～●●～●～\n╰═• ೋ✧๑🌟️๑✧ೋ ≪•◦ ❈ ◦•≫╯',
+  after: '',
+}
 
 let handler = async (m, { conn, usedPrefix: _p, __dirname }) => { 
   try { 
@@ -141,8 +141,8 @@ const pp = await conn.profilePictureUrl(conn.user.jid).catch(_ => 'https://teleg
 
 await conn.reply(m.chat, '✰【𝐄𝐧𝐯𝐢𝐚𝐧𝐝𝐨 𝐄𝐥 𝐌𝐞𝐧𝐮】✰ . . .*', fkontak, { contextInfo:{ forwardingScore: 2022, isForwarded: true, externalAdReply: {title: '✰ 𝐁𝐚𝐢𝐥𝐞𝐲 𝐁𝐨𝐭 - 𝐌𝐃 ✰', body: '👋 Hola ' + name, sourceUrl: global.md, thumbnail: await (await fetch(pp)).buffer() }}})
     
-    let pp1 = 'https://telegra.ph/file/56c0806bcba5406a4844b.mp4'
-    let pp2 = 'https://telegra.ph/file/1280f3f0e69467d2d34c6.mp4'
+     let pp1 = 'https://telegra.ph/file/33d3e7b5d8d455e03136c.mp4'
+     let pp2 = 'https://telegra.ph/file/ea6aba5e9c5b92105d911.mp4'
 
     m.react('🪷') 
     conn.sendMessage(m.chat, { video: { url: [pp1, pp2].getRandom() }, gifPlayback: true, caption: text.trim(), mentions: [m.sender] }, { quoted: m }) 
