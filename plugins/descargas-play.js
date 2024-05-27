@@ -11,39 +11,25 @@ let limit2 = 400;
 let limit_a1 = 50;
 let limit_a2 = 400;
 const handler = async (m, {conn, command, args, text, usedPrefix}) => {
- if (!text) return conn.reply(m.chat, `☄️ *Ingrese el nombre de un video de YouTube*\n\nEjemplo, !${command} Huellas - Maiye Torrex`,  m, fake, )
+  if (!text) throw `[❗] 𝐅𝐚𝐥𝐥𝐨, 𝐏𝐫𝐢𝐦𝐞𝐫𝐨 𝐢𝐧𝐠𝐫𝐞𝐬𝐚 𝐞𝐥 𝐧𝐨𝐦𝐛𝐫𝐞 𝐝𝐞 𝐥𝐚 𝐦𝐮𝐬𝐢𝐜𝐚 \n\n—◉ 𝐄𝐣𝐞𝐦𝐩𝐥𝐨:\n${usedPrefix + command} 𝐍𝐞𝐤𝐨𝐳𝐢𝐥𝐥𝐚`;
   try {
     const yt_play = await search(args.join(' '));
     let additionalText = '';
     if (command === 'play') {
-      additionalText = 'audio';
+      additionalText = '𝐀𝐮𝐝𝐢𝐨 🔊';
     } else if (command === 'play2') {
-      additionalText = 'video';
+      additionalText = '𝐕𝐢𝐝𝐞𝐨 🎥';
     }
-    m.react('🕒') 
-    const texto1 = `₊✧♡₊˚ 🌩・₊✧★🎸🎧°⋆♡₊˚ 🔮
-> 🌩 𝙏𝙄𝙏𝙐𝙇𝙊:
-> • ${yt_play[0].title}
-> ◌⃘࣭ٜ࣪࣪࣪۬☪︎︎︎︎̸━━━━━━━━━━━━━━━◌⃘࣭ٜ࣪࣪࣪۬☪︎︎︎︎̸
-> 🌦 𝙋𝙐𝘽𝙇𝙄𝘾𝘼𝘿𝙊 𝙀𝙉: 
-> • ${yt_play[0].ago}
-> ◌⃘࣭ٜ࣪࣪࣪۬☪︎︎︎︎̸━━━━━━━━━━━━━━━◌⃘࣭ٜ࣪࣪࣪۬☪︎︎︎︎̸
-> 🔮 𝙀𝙉𝙇𝘼𝘾𝙀:
-> • ${yt_play[0].url}
-> ◌⃘࣭ٜ࣪࣪࣪۬☪︎︎︎︎̸━━━━━━━━━━━━━━━◌⃘࣭ٜ࣪࣪࣪۬☪︎︎︎︎̸
-> 👑 𝘼𝙐𝙏𝙊𝙍:
-> • ${yt_play[0].author.name}
-> ◌⃘࣭ٜ࣪࣪࣪۬☪︎︎︎︎̸━━━━━━━━━━━━━━━◌⃘࣭ٜ࣪࣪࣪۬☪︎︎︎︎̸
-> 🌸 𝘾𝘼𝙉𝘼𝙇:
-> • ${yt_play[0].author.url}
-> ◌⃘࣭ٜ࣪࣪࣪۬☪︎︎︎︎̸━━━━━━━━━━━━━━━◌⃘࣭ٜ࣪࣪࣪۬☪︎︎︎︎̸
-> ⏰️ 𝘿𝙐𝙍𝘼𝘾𝙄𝙊𝙉:
-> • ${secondString(yt_play[0].duration.seconds)}
-₊♡₊˚ 🌩 ・₊✧★🎸🎧°⋆♡₊˚ 🔮
-
-> _*Enviando ${additionalText}, Aguarde Un Momento...*_`.trim();
-await conn.sendMessage(m.chat, { text: texto1, contextInfo: { externalAdReply: { title: yt_play[0].title, body: team, thumbnailUrl: yt_play[0].thumbnail, mediaType: 1, showAdAttribution: true, renderLargerThumbnail: true }}} , { quoted: fkontak })
-  if (command == 'play') {
+    const texto1 = `𝐿𝑜𝑏𝑜-𝐵𝑜𝑡-𝐿𝑖𝑡𝑒🐈🌻
+☆ 📑 𝐓𝐢𝐭𝐮𝐥𝐨: ${yt_play[0].title}
+☆ 🎼 𝐃𝐮𝐫𝐚𝐜𝐢𝐨𝐧: ${secondString(yt_play[0].duration.seconds)}
+☆ 🗓️ 𝐕𝐢𝐬𝐭𝐚𝐬: ${`${MilesNumber(yt_play[0].views)}`}
+☆ 🖋️ 𝐀𝐮𝐭𝐨𝐫: ${yt_play[0].author.name}
+☆ 🎞️ 𝐂𝐚𝐧𝐚𝐥: ${yt_play[0].author.url}
+☆ 📄 𝐋𝐢𝐧𝐤: ${yt_play[0].url}\n
+☆ _𝙴𝙽𝚅𝙸𝙰𝙽𝙳𝙾 ${additionalText}, 𝙴𝚂𝙿𝙴𝚁𝙴 𝚄𝙽𝙾𝚂 𝚂𝙴𝙶𝚄𝙽𝙳𝙾𝚂．．．_\n𝕷𝖔𝖇𝖔-𝕭𝖔𝖙-𝕷𝖎𝖙𝖊`.trim();
+    conn.sendMessage(m.chat, {image: {url: yt_play[0].thumbnail}, caption: texto1}, {quoted: m});
+    if (command == 'play') {
     try {    
     const q = '128kbps';
     const v = yt_play[0].url;
@@ -58,14 +44,14 @@ await conn.sendMessage(m.chat, { text: texto1, contextInfo: { externalAdReply: {
     const fileSizeInMB = fileSizeInKB / 1024;
     const size = fileSizeInMB.toFixed(2);    
     if (size >= limit_a2) {  
-    await conn.sendMessage(m.chat, {text: `✔ Descargue su audio en ${dl_url}`}, {quoted: m});
+    await conn.sendMessage(m.chat, {text: `*[ ✔ ] Descargue su audio en ${dl_url}*`}, {quoted: m});
     return;    
     }     
     if (size >= limit_a1 && size <= limit_a2) {  
-    await conn.sendMessage(m.chat, {document: sex, mimetype: 'audio/mpeg', fileName: ttl + `.mp3`}, {quoted: fkontak});   
+    await conn.sendMessage(m.chat, {document: sex, mimetype: 'audio/mpeg', fileName: ttl + `.mp3`}, {quoted: m});   
     return;
     } else {
-    await conn.sendMessage(m.chat, {audio: sex, mimetype: 'audio/mpeg', fileName: ttl + `.mp3`}, {quoted: fkontak});   
+    await conn.sendMessage(m.chat, {audio: sex, mimetype: 'audio/mpeg', fileName: ttl + `.mp3`}, {quoted: m});   
     return    
     }} catch {
     try {      
@@ -76,10 +62,10 @@ await conn.sendMessage(m.chat, { text: texto1, contextInfo: { externalAdReply: {
         buff.on('data', chunk => { bufs.push(chunk) })
         buff.on('end', async () => {
     let buff = Buffer.concat(bufs)
-    conn.sendMessage(m.chat, {audio: buff, fileName: yt_play[0].title + '.mp3', mimetype: 'audio/mpeg'}, {quoted: fkontak});
+    conn.sendMessage(m.chat, {audio: buff, fileName: yt_play[0].title + '.mp3', mimetype: 'audio/mpeg'}, {quoted: m});
     })} catch {
     await YTDL.mp3(yt_play[0].url).then(async (s) => {
-    await conn.sendMessage(m.chat, {audio: fs.readFileSync(s.path), mimetype: "audio/mpeg", fileName: `${s.meta.title || "-"}.mp3`,}, {quoted: fkontak});
+    await conn.sendMessage(m.chat, {audio: fs.readFileSync(s.path), mimetype: "audio/mpeg", fileName: `${s.meta.title || "-"}.mp3`,}, {quoted: m});
     await fs.unlinkSync(s.path)});
     }
   }
@@ -87,51 +73,15 @@ await conn.sendMessage(m.chat, { text: texto1, contextInfo: { externalAdReply: {
     if (command == 'play2') {
     try {  
     const qu = '360';
-    const q = qu + 'p';
-    const v = yt_play[0].url;
-    const yt = await youtubedl(v).catch(async (_) => await youtubedlv2(v));
-    const dl_url = await yt.video[q].download();
-    const ttl = await yt.title;
-    const size_Api = await yt?.size;
-    const sizeApi = size_Api?.replace('MB', '')?.replace('GB', '')?.replace('KB', '')   
-    const sex = await getBuffer(dl_url)
-    const fileSizeInBytes = sex.byteLength;
-    const fileSizeInKB = fileSizeInBytes / 1024;
-    const fileSizeInMB = fileSizeInKB / 1024;
-    const size = fileSizeInMB.toFixed(2);    
-    if (size >= limit2) {  
-    await conn.sendMessage(m.chat, {text: `✔ Descargue su video en ${dl_url}`}, {quoted: fkontak});
-    return;    
-    }     
-    if (size >= limit1 && size <= limit2) {  
-    await conn.sendMessage(m.chat, {document: sex, mimetype: 'video/mp4', fileName: ttl + `.mp4`}, {quoted: fkontak});   
-    return;
-    } else {
-    await conn.sendMessage(m.chat, {video: sex, mimetype: 'video/mp4', fileName: ttl + `.mp4`}, {quoted: fkontak});   
-    return;    
-    }} catch {
-    const formats = await bestFormat(yt_play[0].url, 'video');
-    const buff = await getBuffer(formats.url);
-    const ttl_1 = `${yt_play[0].title ? yt_play[0].title : 'Tu_video_descargado'}`;
-    const fileSizeInBytes = buff.byteLength;
-    const fileSizeInKB = fileSizeInBytes / 1024;
-    const fileSizeInMB = fileSizeInKB / 1024;
-    const roundedFileSizeInMB = fileSizeInMB.toFixed(2);
-    await conn.sendMessage(m.chat, {video: buff, fileName: ttl_1 + '.mp4', mimetype: 'video/mp4'}, {quoted: fkontak});
-    }      
-  }
-} catch (error) {
-    console.log(error)
-    throw '*🍭 Error, por favor vuelva a intentarlo.*';
+      }}
+    }}
+  } catch {
+    throw '*[❗] Error, por favor vuelva a intentarlo.*';
   }
 };
 handler.help = ['play', 'play2'].map((v) => v + ' < busqueda >');
 handler.tags = ['downloader'];
 handler.command = /^(play|play2)$/i;
-
-handler.register = true
-
-
 export default handler;
 
 async function search(query, options = {}) {
@@ -170,8 +120,82 @@ function bytesToSize(bytes) {
   });
 }
 
+async function ytMp3(url) {
+  return new Promise((resolve, reject) => {
+    ytdl.getInfo(url).then(async (getUrl) => {
+      const result = [];
+      for (let i = 0; i < getUrl.formats.length; i++) {
+        const item = getUrl.formats[i];
+        if (item.mimeType == 'audio/webm; codecs=\"opus\"') {
+          const {contentLength} = item;
+          const bytes = await bytesToSize(contentLength);
+          result[i] = {audio: item.url, size: bytes};
+        }
+      }
+      const resultFix = result.filter((x) => x.audio != undefined && x.size != undefined);
+      const tiny = await axios.get(`https://tinyurl.com/api-create.php?url=${resultFix[0].audio}`);
+      const tinyUrl = tiny.data;
+      const title = getUrl.videoDetails.title;
+      const thumb = getUrl.player_response.microformat.playerMicroformatRenderer.thumbnail.thumbnails[0].url;
+      resolve({title, result: tinyUrl, result2: resultFix, thumb});
+    }).catch(reject);
+  });
+}
+
+async function ytMp4(url) {
+  return new Promise(async (resolve, reject) => {
+    ytdl.getInfo(url).then(async (getUrl) => {
+      const result = [];
+      for (let i = 0; i < getUrl.formats.length; i++) {
+        const item = getUrl.formats[i];
+        if (item.container == 'mp4' && item.hasVideo == true && item.hasAudio == true) {
+          const {qualityLabel, contentLength} = item;
+          const bytes = await bytesToSize(contentLength);
+          result[i] = {video: item.url, quality: qualityLabel, size: bytes};
+        }
+      }
+      const resultFix = result.filter((x) => x.video != undefined && x.size != undefined && x.quality != undefined);
+      const tiny = await axios.get(`https://tinyurl.com/api-create.php?url=${resultFix[0].video}`);
+      const tinyUrl = tiny.data;
+      const title = getUrl.videoDetails.title;
+      const thumb = getUrl.player_response.microformat.playerMicroformatRenderer.thumbnail.thumbnails[0].url;
+      resolve({title, result: tinyUrl, rersult2: resultFix[0].video, thumb});
+    }).catch(reject);
+  });
+}
+
+async function ytPlay(query) {
+  return new Promise((resolve, reject) => {
+    yts(query).then(async (getData) => {
+      const result = getData.videos.slice( 0, 5 );
+      const url = [];
+      for (let i = 0; i < result.length; i++) {
+        url.push(result[i].url);
+      }
+      const random = url[0];
+      const getAudio = await ytMp3(random);
+      resolve(getAudio);
+    }).catch(reject);
+  });
+}
+
+async function ytPlayVid(query) {
+  return new Promise((resolve, reject) => {
+    yts(query).then(async (getData) => {
+      const result = getData.videos.slice( 0, 5 );
+      const url = [];
+      for (let i = 0; i < result.length; i++) {
+        url.push(result[i].url);
+      }
+      const random = url[0];
+      const getVideo = await ytMp4(random);
+      resolve(getVideo);
+    }).catch(reject);
+  });
+}
+
 const getBuffer = async (url, options) => {
     options ? options : {};
     const res = await axios({method: 'get', url, headers: {'DNT': 1, 'Upgrade-Insecure-Request': 1,}, ...options, responseType: 'arraybuffer'});
     return res.data;
-};
+};*/
