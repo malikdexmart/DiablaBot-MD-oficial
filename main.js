@@ -73,57 +73,45 @@ global.db.data = {
 users: {},
 chats: {},
 stats: {},
-
-conn.sdemote = '@user 🚫 𝐄𝐑𝐑𝐎𝐑 🚫 !ᥲᑲᥲᥒძ᥆ᥒᥲ ᥱᥣ grᥙ⍴᥆!'
-
-conn.sDesc = '🚫 𝐀𝐓𝐄𝐍𝐂𝐈𝐎𝐍 🚫 sᥱ һᥲ m᥆ძі𝖿і́ᥴᥲძ᥆ ᥣᥲ ძᥱsᥴrі⍴ᥴі᥆́ᥒ ძᥱᥣ grᥙ⍴᥆'
-
-conn.sSubject = '🚫 𝐀𝐓𝐄𝐍𝐂𝐈𝐎́𝐍 🚫 sᥱ һᥲ m᥆ძі𝖿іᥴᥲძ᥆ ᥱᥣ 𝗍і́𝗍ᥙᥣ᥆ ძᥱᥣ grᥙ⍴᥆'
-
-conn.sIcon = '🚫 𝐄𝐑𝐑𝐎𝐑 🚫 sᥱ һᥲ ᥴᥲmᑲіᥲძ᥆ ᥣᥲ 𝖿᥆𝗍᥆ ძᥱᥣ grᥙ⍴᥆'
-
-conn.Revoke = '*Se a cambiado el enlace del grupo*'
-        
-
-conn.handler = handler.handler.bind(global.conn)
-conn.participantsUpdate = handler.participantsUpdate.bind(global.conn)
-conn.groupsUpdate = handler.groupsUpdate.bind(global.conn)
-conn.onDelete = handler.deleteUpdate.bind(global.conn)
-conn.onCall = handler.callUpdate.bind(global.conn)
-conn.connectionUpdate = connectionUpdate.bind(global.conn)
-conn.credsUpdate = saveCreds.bind(global.conn, true)
-
-const currentDateTime = new Date()
-const messageDateTime = new Date(conn.ev)
-if (currentDateTime >= messageDateTime) {
-const chats = Object.entries(conn.chats).filter(([jid, chat]) => !jid.endsWith('@g.us') && chat.isChats).map((v) => v[0])
-} else {
-const chats = Object.entries(conn.chats).filter(([jid, chat]) => !jid.endsWith('@g.us') && chat.isChats).map((v) => v[0])
+msgs: {},
+sticker: {},
+settings: {},
+...(global.db.data || {}),
 }
-
-conn.ev.on('messages.upsert', conn.handler)
-conn.ev.on('group-participants.update', conn.participantsUpdate)
-conn.ev.on('groups.update', conn.groupsUpdate)
-conn.ev.on('message.delete', conn.onDelete)
-conn.ev.on('call', conn.onCall)
-conn.ev.on('connection.update', conn.connectionUpdate)
-conn.ev.on('creds.update', conn.credsUpdate)
-isInit = false
-return true
+global.db.chain = chain(global.db.data)
 }
+loadDatabase()
 
-const pluginFolder = global.__dirname(join(__dirname, './plugins/index'))
-const pluginFilter = (filename) => /\.js$/.test(filename);
-global.plugins = {}
-async function filesInit() {
-for (const filename of readdirSync(pluginFolder).filter(pluginFilter)) {
-try {
-const file = global.__filename(join(pluginFolder, filename))
-const module = await import(file)
-global.plugins[filename] = module.default || module
-} catch (e) {
-conn.logger.error(e)
-delete global.plugins[filename]
+global.chatgpt = new Low(new JSONFile(path.join(__dirname, '/db/chatgpt.json')))
+global.loadChatgptDB = async function loadChatgptDB() {
+if (global.chatgpt.READ) {
+return new Promise((resolve) =>
+setInterval(async function() {
+if (!global.chatgpt.READ) {
+clearInterval(this)
+resolve( global.chatgpt.data === null ? global.loadChatgptDB() : global.chatgpt.data )
+}
+}, 1 * 1000))
+}
+if (global.chatgpt.data !== null) return
+global.chatgpt.READ = true
+await global.chatgpt.read().catch(console.error)
+global.chatgpt.READ = null
+global.chatgpt.data = {
+users: {},
+...(global.chatgpt.data || {}),
+}
+global.chatgpt.chain = lodash.chain(global.chatgpt.data)
+}
+loadChatgptDB()
+
+global.authFile = `sessions`
+const {state, saveState, saveCreds} = await useMultiFileAuthState(global.authFile)
+const msgRetryCounterMap = (MessageRetryMap) => { };
+const msgRetryCounterCache = new NodeCache()
+const {version} = await fetchLatestBaileysVersion();
+let phoneNumber = global.botNumberCode
+
 }}}
 filesInit().then((_) => Object.keys(global.plugins)).catch(console.error)
 
@@ -180,21 +168,21 @@ Object.freeze(global.support)
 setInterval(async () => {
 if (stopped === 'close' || !conn || !conn.user) return
 const a = await clearTmp()
-console.log(chalk.cyanBright(`\nAUTOCLEAR │ BASURA ELIMINADA\n`))
+console.log(chalk.cyanBright(`\n╭» ♨️ BaileyBot-MD ♨️\n│→ AUTOCLEAR │ BASURA ELIMINADA \n╰― ━ ― ━ ― ━ ― ━ ― ━ ― ━ ― ― ━ ― ━ ― ━ 🗑️♻️`))
 }, 180000)
 setInterval(async () => {
 if (stopped === 'close' || !conn || !conn.user) return
 await purgeSession()
-console.log(chalk.cyanBright(`\nAUTOPURGESESSIONS │ BASURA ELIMINADA\n`))
+console.log(chalk.cyanBright(`\n╭» ♨️ BaileyBot-MD ♨️\n│→ AUTOPURGESESSIONS │ BASURA ELIMINADA \n╰― ━ ― ━ ― ━ ― ━ ― ━ ― ━ ― ━ ― ━ ― ━ ― 🗑️♻️`))
 }, 100000)
 setInterval(async () => {
 if (stopped === 'close' || !conn || !conn.user) return;
 await purgeSessionSB()
-console.log(chalk.cyanBright(`\nAUTO_PURGE_SESSIONS_SUB-BOTS │ BASURA ELIMINADA\n`))
+console.log(chalk.cyanBright(`\n╭» ♨️ BaileyBot-MD ♨️\n│→ AUTO_PURGE_SESSIONS_SUB-BOTS │ BASURA ELIMINADA \n╰― ━ ― ━ ― ━ ― ━ ― ━ ― ━ ― ━ ― ━ ― ― ━ 🗑️♻️`))
 }, 1000 * 60 * 60)
 setInterval(async () => {
 if (stopped === 'close' || !conn || !conn.user) return
 await purgeOldFiles()
-console.log(chalk.cyanBright(`\nAUTO_PURGE_OLDFILES │ BASURA ELIMINADA\n`))
+console.log(chalk.cyanBright(`\n╭» ♨️ BaileyBot-MD ♨️\n│→ AUTO_PURGE_OLDFILES │ BASURA ELIMINADA \n╰― ━ ― ━ ― ━ ― ━ ― ━ ― ━ ― ━ ― ━ ― ━ ― 🗑️♻️`))
 }, 1000 * 60 * 60)
 _quickTest().catch(console.error)
