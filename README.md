@@ -126,9 +126,7 @@ Para que no pierda su progreso en CuriosityBot, estos comandos realizarán un re
 - ### Activar En Render
 
 [![Deploy to Render](https://render.com/images/deploy-to-render-button.svg)](https://dashboard.render.com/blueprint/new?repo=https%3A%2F%2Fgithub.com%2FAzamiJs%2FCuriosityBot-MD) 
-----  
-- ### ☁️ Vortexus Cloud - Host
-> Integra CuriosityBot-MD en un servicio de alojamiento 24/7 online 
+----   
 
 <a href="https://vortexuscloud.com"><img src="https://telegra.ph/file/4bd3d8d14e5683073d4f3.jpg" height="125px"></a>
 ### vortexus cloud
