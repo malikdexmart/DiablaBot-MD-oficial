@@ -8,18 +8,19 @@ let handler = async (m, { conn, command, text, usedPrefix }) => {
         let { title, description, thumbnail, videoId, timestamp, views, ago, url } = vid
         //const url = 'https://www.youtube.com/watch?v=' + videoId
         m.react('🎧')
-        let play = `
-        ≡ ${wm}
-> ┌──────────────
-> 📌 *Título* : ${title}
-> 📆 *Publicado:* ${ago}
-> ⌚ *Duración:* ${timestamp}
-> 👀 *Vistas:* ${views}
-> └──────────────`
+        let play = `┏━━━━━━━━━━━━━━━━━━━
+ 📌 *Título* : ${title}
+┃ ━ ━ ━ ━ ━ ━ ━ ━ ━ ━ ━ ━ ━   
+ 📆 *Publicado:* ${ago}
+┃━ ━ ━ ━ ━ ━ ━ ━ ━ ━ ━ ━ ━ 
+ ⌚ *Duración:* ${timestamp}
+┃ ━ ━ ━ ━ ━ ━ ━ ━ ━ ━ ━ ━ ━ 
+ 👀 *Vistas:* ${views}
+┗━━━━━━━━━━━━━━━━━━━`
  await conn.sendButton(m.chat, play, fgig, thumbnail, [
-    ['💫 𝗔𝗨𝗗𝗜𝗢 💫', `${usedPrefix}fgmp3 ${url}`],
-    ['✨ 𝗩𝗜𝗗𝗘𝗢 ✨', `${usedPrefix}fgmp4 ${url}`]
-  ], m, fake)
+    ['🍧 MP3', `${usedPrefix}fgmp3 ${url}`],
+    ['🍿 MP4', `${usedPrefix}fgmp4 ${url}`]
+  ], m)
 }
 handler.help = ['bot']
 handler.tags = ['descargas']
