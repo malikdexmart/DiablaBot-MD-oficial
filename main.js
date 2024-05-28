@@ -409,9 +409,9 @@ conn.credsUpdate = saveCreds.bind(global.conn, true)
 const currentDateTime = new Date()
 const messageDateTime = new Date(conn.ev)
 if (currentDateTime >= messageDateTime) {
-const chats = Object.entries(conn.chat).filter(([jid, chat]) => !jid.endsWith('@g.us') && chat.isChats).map((v) => v[0])
+const chat = Object.entries(conn.chat).filter(([jid, chat]) => !jid.endsWith('@g.us') && chat.isChats).map((v) => v[0])
 } else {
-const chats = Object.entries(conn.chat).filter(([jid, chat]) => !jid.endsWith('@g.us') && chat.isChats).map((v) => v[0])
+const chat = Object.entries(conn.chat).filter(([jid, chat]) => !jid.endsWith('@g.us') && chat.isChats).map((v) => v[0])
 }
 
 conn.ev.on('messages.upsert', conn.handler)
