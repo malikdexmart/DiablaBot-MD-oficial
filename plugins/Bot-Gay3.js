@@ -7,7 +7,7 @@ let handler = async (m, { conn, command, text, usedPrefix }) => {
         if (!vid) throw `🚫 𝐀𝐓𝐄𝐍𝐂𝐈𝐎𝐍 🚫 ᥎і́ძᥱ᥆/ᥲᥙძі᥆ ᥒ᥆ ᥱᥒᥴ᥆ᥒ𝗍rᥲძ᥆`
         let { title, description, thumbnail, videoId, timestamp, views, ago, url } = vid
         //const url = 'https://www.youtube.com/watch?v=' + videoId
-        m.react('🎧')
+       
         let play = `
         ≡ ${wm}
 > ┌──────────────
