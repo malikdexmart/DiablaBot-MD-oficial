@@ -363,12 +363,12 @@ if (Object.keys(Handler || {}).length) handler = Handler
 console.error(e)
 }
 if (restatConn) {
-const oldChats = global.conn.chats
+const oldChats = global.conn.chat
 try {
 global.conn.ws.close()
 } catch { }
 conn.ev.removeAllListeners()
-global.conn = makeWASocket(connectionOptions, {chats: oldChats})
+global.conn = makeWASocket(connectionOptions, {chat: oldChats})
 isInit = true
 }
 if (!isInit) {
