@@ -7,7 +7,7 @@ let handler = async (m, { conn, command, text, usedPrefix }) => {
         if (!vid) throw `🚫 𝐀𝐓𝐄𝐍𝐂𝐈𝐎𝐍 🚫 ᥎і́ძᥱ᥆/ᥲᥙძі᥆ ᥒ᥆ ᥱᥒᥴ᥆ᥒ𝗍rᥲძ᥆`
         let { title, description, thumbnail, videoId, timestamp, views, ago, url } = vid
         //const url = 'https://www.youtube.com/watch?v=' + videoId
-        
+        m.react('🌹')
 
         let play = `┏━━━━━━━━━━━━━━━━━━━
  📌 *Título* : ${title}
@@ -18,10 +18,10 @@ let handler = async (m, { conn, command, text, usedPrefix }) => {
 ┃ ━ ━ ━ ━ ━ ━ ━ ━ ━ ━ ━ ━ ━ 
  👀 *Vistas:* ${views}
 ┗━━━━━━━━━━━━━━━━━━━`
- await conn.sendButton(play, fgig, thumbnail, [
+ await conn.sendButton(m.chats play, fgig, thumbnail, [
     ['🍧 MP3', `${usedPrefix}fgmp3 ${url}`],
     ['🍿 MP4', `${usedPrefix}fgmp4 ${url}`]
-  ],
+  ], m)
 }
 handler.help = ['bot']
 handler.tags = ['descargas']
