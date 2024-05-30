@@ -1,4 +1,4 @@
-## Bailey : Bot - MD ✨️
+## DIABLA - BOT - MD
 
 [![-----------------------------------------------------](https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/colored.png)](#table-of-contents)
 
@@ -8,9 +8,9 @@
 
 [![-----------------------------------------------------](https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/colored.png)](#table-of-contents)
 
-<a href="https://github.com/Jxtxn17/BaileyBot-MD"><img title="Stars" src="https://img.shields.io/github/stars/azamijs/CuriosityBot-MD?color=ff4500&style=flat-square" /></a>
-<a href="https://github.com/zhwzein/Killua-Zoldyck/network/members"><img title="Forks" src="https://img.shields.io/github/forks/Jxtxn17/BaileyBot-MD?color=ff4500&style=flat-square" /></a>
-<a href="https://github.com/zhwzein/Killua-Zoldyck/watchers"><img title="Watching" src="https://img.shields.io/github/watchers/Jxtxn17/BaileyBot-MD?label=watchers&color=ff4500&style=flat-square" /></a> <br>
+<a href="https://github.com/EnzoVaselevich/DiablaBot-MD-oficial-MD"><img title="Stars" src="https://img.shields.io/github/stars/EnzoVaselevich/DiablaBot-MD-oficial?color=ff4500&style=flat-square" /></a>
+<a href="https://github.com/zhwzein/Killua-Zoldyck/network/members"><img title="Forks" src="https://img.shields.io/github/forks/EnzoVaselevich/DiablaBot-MD-oficial?color=ff4500&style=flat-square" /></a>
+<a href="https://github.com/zhwzein/Killua-Zoldyck/watchers"><img title="Watching" src="https://img.shields.io/github/watchers/EnzoVaselevich/DiablaBot-MD-oficial?label=watchers&color=ff4500&style=flat-square" /></a> <br>
 
 <a href="https://www.youtube.com/@Enzito">
 <img src="https://img.shields.io/badge/YouTube-FF0000?style=for-the-badge&logo=youtube&logoColor=white" alt="YouTube">
