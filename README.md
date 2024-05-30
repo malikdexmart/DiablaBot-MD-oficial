@@ -141,19 +141,6 @@ Para que no pierda su progreso en CuriosityBot, estos comandos realizarán un re
 - [x] **Configuración** <details><summary>**Ajustes del Servidor - CuriosityBot-MD**</summary><img src="https://telegra.ph/file/524ab6e15b912d9cdb777.jpg"></details>
 ------------------
 
-- ### ☂️ Activar En Heroku ☂️
-para usuarios del heroku
-
-[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/Azami19/CuriosityBot-MD1)
-
-#### Heroku Buildpack
-| BuildPack | LINK |
-|--------|--------|
-| **FFMPEG** |[click](https://github.com/jonathanong/heroku-buildpack-ffmpeg-latest) |
-| **IMAGEMAGICK** | [click](https://github.com/DuckyTeam/heroku-buildpack-imagemagick) |
-
-***
-
 
 ### EDITOR Y PROPIETARIO DEL BOT
 <a href="https://github.com/EnzoVaselevich"><img src="https://github.com/EnzoVaselevich.png" width="250" height="250" alt="EnzoVaselevich"/></a>
