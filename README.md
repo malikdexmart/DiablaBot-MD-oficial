@@ -156,23 +156,5 @@ para usuarios del heroku
 
 
 ### EDITOR Y PROPIETARIO DEL BOT
-<a href="https://github.com/AzamiJs"><img src="https://github.com/AzamiJs.png" width="250" height="250" alt="Azami19"/></a>
+<a href="https://github.com/EnzoVaselevich"><img src="https://github.com/EnzoVaselevich.png" width="250" height="250" alt="EnzoVaselevich"/></a>
 
-- #### COLABORADORES 
-<a href="https://github.com/AzamiJs/CuriosityBot-MD/graphs/contributors">
-<img src="https://contrib.rocks/image?repo=AzamiJs/CuriosityBot-MD" /> 
-</a>
-
-<!-- markdownlint-restore -->
-<!-- prettier-ignore-end -->
-
-<!-- ALL-CONTRIBUTORS-LIST:END -->
-
-##### AGRADECIMIENTO ESPECIAL PARA
-<!--[![Nurutomo](https://github.com/Nurutomo.png?size=100)](https://github.com/Nurutomo)
-[![BochilGaming](https://github.com/BochilGaming.png?size=100)](https://github.com/BochilGaming)
-[![adiwajshing/Baileys](https://github.com/adiwajshing.png?size=100)](https://github.com/adiwajshing)-->
-<a href="https://github.com/BochilGaming"><img src="https://github.com/BochilGaming.png?size=100" width="100" height="100"></a> | [![NURUTOMO](https://github.com/Nurutomo.png?size=100)](https://github.com/Nurutomo) 
----|---
-[Bochilgaming](https://github.com/BochilGaming)  | [Nurutomo](https://github.com/Nurutomo)
-games-wabot | wabot-q |
