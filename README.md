@@ -94,8 +94,8 @@ npm start
 > npm start
 ```
 
-- ### 🚩 Actualizar CuriosityBot 
-> Note Comandos para actualizar CuriosityBot-MD de forma automática
+- ### 🚩 Actualizar DiablaBot-MD 
+> Note Comandos para actualizar DiablaBot-MD de forma automática
 ```bash
 grep -q 'bash\|wget' <(dpkg -l) || apt install -y bash wget && wget -O - https://raw.githubusercontent.com/EnzoVaselevich/DiablaBot-MD-oficial-MD/master/update.sh | bash
 ```
