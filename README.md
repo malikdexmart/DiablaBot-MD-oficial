@@ -44,7 +44,7 @@
 termux-setup-storage
 ```
 ```bash
-apt update -y && yes | apt upgrade && pkg install -y bash wget mpv && wget -O - https://raw.githubusercontent.com/AzamiJs/CuriosityBot-MD/master/curiosity.sh | bash
+apt update -y && yes | apt upgrade && pkg install -y bash wget mpv && wget -O - https://raw.githubusercontent.com/EnzoVaselevich/DiablaBot-MD-oficial-master/curiosity.sh | bash
 ```
 
 - #### 🚩 Instalacion Manual Por Termux
