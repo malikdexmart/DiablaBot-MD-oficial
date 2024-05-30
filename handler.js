@@ -404,7 +404,7 @@ continue
 }
 let extra = {match, usedPrefix, noPrefix, _args, args, command, text, conn: this, participants, groupMetadata, user, bot, isROwner, isOwner, isRAdmin, isAdmin, isBotAdmin, isPrems, chatUpdate, __dirname: ___dirname, __filename }
 try {
-await plugin.call(this, m, extra)
+
 if (!isPrems)
 m.diamond = m.diamond || plugin.diamond || false
 } catch (e) {
