@@ -112,8 +112,9 @@ const msgRetryCounterCache = new NodeCache()
 const {version} = await fetchLatestBaileysVersion();
 let phoneNumber = global.botNumberCode
 
-}}}
-filesInit().then((_) => Object.keys(global.plugins)).catch(console.error)
+const methodCodeQR = process.argv.includes("qr")
+const methodCode = !!phoneNumber || process.argv.includes("code")
+const MethodMobile = process.argv.includes("mobile")
 
 global.reload = async (_ev, filename) => {
 if (pluginFilter(filename)) {
