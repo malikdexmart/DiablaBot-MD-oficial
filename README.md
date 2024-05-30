@@ -138,8 +138,6 @@ Para que no pierda su progreso en CuriosityBot, estos comandos realizarán un re
 - **Contacto:** [`Aquí`](https://wa.me/258858119033) 
 - **Canal de WhatsApp:** [`Aquí`](https://whatsapp.com/channel/0029Va8ZD6O3mFXxTPl1m13A)
 
-- [x] **Configuración** <details><summary>**Ajustes del Servidor - CuriosityBot-MD**</summary><img src="https://telegra.ph/file/524ab6e15b912d9cdb777.jpg"></details>
-------------------
 
 
 ### EDITOR Y PROPIETARIO DEL BOT
