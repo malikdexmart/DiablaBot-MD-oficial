@@ -25,7 +25,7 @@ return conn.reply(m.chat, `*🚫 𝐄𝐑𝐑𝐎𝐑 🚫 ⍴ᥲrᥲ ⍴᥆ძ�
 }} else {
 return conn.reply(m.chat, `*🚫 𝐄𝐑𝐑𝐎𝐑 🚫 ⍴ᥲrᥲ ᥙsᥲr ᥱs𝗍ᥱ ᥴ᥆mᥲᥒძ᥆ ძᥱ ᥣᥲ mᥲᥒᥱrᥲ ${usedPrefix + command} <numero>), rᥱᥲᥣіzᥲ ᥣᥲ ᑲᥙ́s𝗊ᥙᥱძᥲ ᥴ᥆ᥒ ${usedPrefix}playlist <texto>*`,  m, fake, )
 }}} 
-await conn.reply(m.chat, `*🚀 ᴄᴀʀɢᴀɴᴅᴏ ᴇsᴘᴇʀᴇ.. ツ*`, m, fake, )
+await conn.reply(m.chat, `*🍭 𝑪𝒂𝒓𝒈𝒂𝒏𝒅𝒐 𝒆𝒔𝒑𝒆𝒓𝒆́.. ッ၇*`, m, fake, )
 
 try {
 
