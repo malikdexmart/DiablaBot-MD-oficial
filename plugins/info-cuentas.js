@@ -14,15 +14,15 @@ let texto = `𝘽𝙞𝙚𝙣𝙫𝙚𝙣𝙞𝙙𝙤 𝙖 𝙡𝙤𝙨 𝙜𝙧
 
 𝙏𝙖𝙢𝙗𝙞𝙚́𝙣 𝙥𝙪𝙚𝙙𝙚𝙨 𝙪𝙣𝙞𝙧𝙩𝙚 𝙖 𝙡𝙤𝙨 𝙜𝙧𝙪𝙥𝙤𝙨 𝙙𝙚 𝙣𝙪𝙚𝙨𝙩𝙧𝙤𝙨 𝙘𝙤𝙡𝙖𝙗𝙤𝙧𝙖𝙙𝙤𝙧𝙚𝙨.
 
-CuriosityBot-MD
+CBaileyBot
 ╍╍╍╍╍╍╍╍╍╍╍
 *${Curiosity}*
 ╍╍╍╍╍╍╍╍╍╍╍
-HachikoBot-MD
+BrolyBot
 ╍╍╍╍╍┅╍╍╍┅╍
 *${hachiko}*
 ╍╍┅╍╍╍╍╍╍╍╍
-LoboBot-MD
+GokuBot-MD 
 ╍╍┅╍╍╍╍╍╍╍┅
 *${Lobo}*
 ┅╍╍╍╍╍╍╍╍╍┅`
