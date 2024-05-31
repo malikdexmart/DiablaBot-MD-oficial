@@ -50,7 +50,6 @@ global.git = 'https://github.com/Jxtxn17'
 global.nn = 'https://chat.whatsapp.com/LhlBSyakvI3GjGSvFTa1hh' //Grupo ofc
 global.BrolyBot = 'https://chat.whatsapp.com/LCAUbkf5kUz7jSxO6FADMU' //BrolyBot-MD OFC
 global.BaileyBot = 'https://chat.whatsapp.com/LRQdtS7nKt89NBUPWJDjzh' //BaileyBot-MD OFC
-global.GokuBot-MD = 'https://chat.whatsapp.com/G9MpDVmJtbiIpItEZpg70s' //GokuBot-MD OFC
 global.nnn = 'https://chat.whatsapp.com/ENP021x0aR5HWvG1HpvlCo' //Bailey global
 global.channel = 'https://whatsapp.com/channel/0029VaFbERfFnSz5zeyfpi3L' //DiablaBot-MD 
 global.nnnn = 'https://chat.whatsapp.com/KLpYFsitkgzJ15YQxZrBqO' //colaboración multi bots
