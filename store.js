@@ -42,17 +42,17 @@ global.img14 = 'https://telegra.ph/file/18143e1203462bf7f7b98.jpg'
 global.ImgAll = [img, img1, img2, img3, img4, img5, img6, img7, img8, img9, img10, img11, img12, img13, img14]
 
 //Enlaces
-global.yt = 'https://www.youtube.com/@Azami_Mods'
-global.ig = 'https://www.instagram.com/b.jxtxn17'
+global.yt = 'https://youtube.com/@enzito-19?'
+global.ig = 'https://www.instagram.com/enzito_oficial._?'
 global.md = 'https://github.com/EnzoVaselevich/DIABLABOT-MD-OFC-'
 global.paypal = '+51929972576'
 global.git = 'https://github.com/Jxtxn17'
 global.nn = 'https://chat.whatsapp.com/LhlBSyakvI3GjGSvFTa1hh' //Grupo ofc
-global.Curiosity = 'https://chat.whatsapp.com/LCAUbkf5kUz7jSxO6FADMU' //Curiosity OFC
-global.hachiko = 'https://chat.whatsapp.com/LRQdtS7nKt89NBUPWJDjzh' //Hachiko OFC
-global.Lobo = 'https://chat.whatsapp.com/Li46EUQhA5tJqXEENfKPJd' //Lobo OFC
+global.Curiosity = 'https://chat.whatsapp.com/LCAUbkf5kUz7jSxO6FADMU' //BrolyBot-MD OFC
+global.hachiko = 'https://chat.whatsapp.com/LRQdtS7nKt89NBUPWJDjzh' //BaileyBot-MD OFC
+global.Lobo = 'https://chat.whatsapp.com/G9MpDVmJtbiIpItEZpg70s' //GokuBot-MD OFC
 global.nnn = 'https://chat.whatsapp.com/ENP021x0aR5HWvG1HpvlCo' //Bailey global
-global.channel = 'https://whatsapp.com/channel/0029VaFbERfFnSz5zeyfpi3L' //BaileyBot-MD
+global.channel = 'https://whatsapp.com/channel/0029VaFbERfFnSz5zeyfpi3L' //DiablaBot-MD 
 global.nnnn = 'https://chat.whatsapp.com/KLpYFsitkgzJ15YQxZrBqO' //colaboración multi bots
 global.fgig = 'Sigue nuestro Canal apretando las mini letras azules!!'
 global.linkSity = [yt, ig, md, paypal, git, nn]
