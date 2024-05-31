@@ -24,7 +24,7 @@ BrolyBot
 ╍╍┅╍╍╍╍╍╍╍╍
 GokuBot-MD 
 ╍╍┅╍╍╍╍╍╍╍┅
-*${Lobo}*
+*${GokuBot-MD }*
 ┅╍╍╍╍╍╍╍╍╍┅`
 await conn.sendFile(m.chat, foto, 'Curiosity.jpg', texto, estilo)}
 
