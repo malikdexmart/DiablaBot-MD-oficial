@@ -24,21 +24,21 @@ global.rosas = fs.readFileSync('./storage/imagenes/rosas.jpg')
 global.refran = fs.readFileSync('./storage/imagenes/refran.jpg')
 global.linksjpg = fs.readFileSync('./storage/imagenes/Links.jpg')
 
-global.img = 'https://telegra.ph/file/814e64f578d98e4244a3d.jpg'
-global.img1 = 'https://telegra.ph/file/74b7c003d04dec5875ba0.jpg'
-global.img2 = 'https://telegra.ph/file/9223caecc3e7b731073e2.jpg'
-global.img3 = 'https://telegra.ph/file/7deef65f6a53ecdd51cdd.jpg'
-global.img4 = 'https://telegra.ph/file/4f023f918af2bde72c839.jpg'
-global.img5 = 'https://telegra.ph/file/a34ebad4c9b5963c82f1a.jpg'
-global.img6 = 'https://telegra.ph/file/4e69f6c48d99f6c1174a9.jpg'
-global.img7 = 'https://telegra.ph/file/951275803faa754aff010.jpg'
+global.img = 'https://telegra.ph/file/28b5a6a10909c17ecfe48.jpg'
+global.img1 = 'https://telegra.ph/file/3abd1e76f94e33d819d3d.jpg'
+global.img2 = 'https://telegra.ph/file/cc5efa71e0e7a4142eff8.jpg'
+global.img3 = 'https://telegra.ph/file/412f2762cdcf947a49674.jpg'
+global.img4 = 'https://telegra.ph/file/279f892f9665db16f1790.jpg'
+global.img5 = 'https://telegra.ph/file/f2c173882d4e3ee1c6bec.jpg'
+global.img6 = 'https://telegra.ph/file/128e7ad287c7b67842fe0.jpg'
+global.img7 = 'https://telegra.ph/file/e5ae71344c161a6cac017.jpg'
 global.img8 = 'https://telegra.ph/file/9f765ea386a9dd1a5f8e5.jpg'
-global.img9 = 'https://telegra.ph/file/011be97f80f19286ee4c7.jpg'
-global.img10 = 'https://telegra.ph/file/98bec3c66149fee093a3f.jpg'
-global.img11 = 'https://telegra.ph/file/d3c4150200fcba6fb15af.jpg'
-global.img12 = 'https://telegra.ph/file/fd775e4753173ecdf950a.jpg'
-global.img13 = 'https://telegra.ph/file/0476f5da331e1a1712df9.jpg'
-global.img14 = 'https://telegra.ph/file/2bda19dcfa7472089a3a3.jpg'
+global.img9 = 'https://telegra.ph/file/3107757d74721b20058b5.jpg'
+global.img10 = 'https://telegra.ph/file/ca664959a9cfccb8111b1.jpg'
+global.img11 = 'https://telegra.ph/file/7d0c2a1b62d18bbb30673.jpg'
+global.img12 = 'https://telegra.ph/file/ab430ce3b71196d3325cf.jpg'
+global.img13 = 'https://telegra.ph/file/ab430ce3b71196d3325cf.jpg'
+global.img14 = 'https://telegra.ph/file/18143e1203462bf7f7b98.jpg'
 global.ImgAll = [img, img1, img2, img3, img4, img5, img6, img7, img8, img9, img10, img11, img12, img13, img14]
 
 //Enlaces
