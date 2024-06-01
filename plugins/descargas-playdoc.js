@@ -33,7 +33,7 @@ ${yt_play[0].author.url}
 ${yt_play[0].url}
 
 *Enviando ${additionalText}*
-🚫 𝐀𝐓𝐄𝐍𝐂𝐈𝐎𝐍 🚫 ᥱs⍴ᥱrᥱ ᥙᥒ m᥆mᥱᥒ𝗍᥆`.trim()
+🦋 𝐀𝐓𝐄𝐍𝐂𝐈𝐎𝐍 🦋 𝐞𝐬𝐩𝐞𝐫𝐞 𝐮𝐧 𝐦𝐨𝐦𝐞𝐧𝐭𝐨`.trim()
 await conn.sendMessage(m.chat, { text: texto1, contextInfo: { externalAdReply: { title: yt_play[0].title, body: dev, thumbnailUrl: yt_play[0].thumbnail, mediaType: 1, showAdAttribution: true, renderLargerThumbnail: true }}} , { quoted: m })
 
 if (command == 'play3' || command == 'playdoc') {
