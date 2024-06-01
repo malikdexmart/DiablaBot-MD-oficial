@@ -42,7 +42,7 @@ var txt = `🚩 *Estado*
 *Internet IN* : ${netsIn}
 *Internet OUT* : ${netsOut}`
 
-conn.relayMessage(m.chat, { extendedTextMessage:{ text: txt, contextInfo: { externalAdReply: { title: '', mediaType: 1, previewType: 0, renderLargerThumbnail: true, thumbnailUrl: 'https://telegra.ph/file/ec8cf04e3a2890d3dce9c.jpg', sourceUrl: '' }}, mentions: [m.sender] }}, {})
+conn.relayMessage(m.chat, { extendedTextMessage:{ text: txt, contextInfo: { externalAdReply: { title: '', mediaType: 1, previewType: 0, renderLargerThumbnail: true, thumbnailUrl: 'https://telegra.ph/file/dd0b5d1a366f4c3cbe4d7.jpg', sourceUrl: '' }}, mentions: [m.sender] }}, {})
 
 console.log(OS)
 } catch (e) {
