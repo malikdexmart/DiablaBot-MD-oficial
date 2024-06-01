@@ -25,7 +25,6 @@ forwardingScore: 9999,
 isForwarded: true, 
 externalAdReply: {
 title: gcname,
-body: 'Startmoon Team | ©2024 hosted by:optiklink',
 thumbnailUrl: 'https://telegra.ph/file/5363728046674b1dd80a4.jpg',
 sourceUrl: linkgc,
 mediaType: 1,
