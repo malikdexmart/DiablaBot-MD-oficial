@@ -191,7 +191,7 @@ function _0x16a5() {
         'VeNPW',
         'BJVpb',
         'connectionUpdate',
-        '🚀\x20*♨️ 𝙹𝚊𝚍𝚒𝙱𝚘𝚝\x20-\x20𝙱𝚊𝚒𝚕𝚎𝚢𝙱𝚘𝚝-𝙼𝙳 ♨️*\x0a\x0aInicia\x20sesión\x20con\x20este\x20código\x20para\x20convertirte\x20en\x20un\x20bot\x20temporal\x0a\x0a1.\x20Haga\x20click\x20en\x20los\x20tres\x20puntos\x20en\x20la\x20esquina\x20superior\x20derecha.\x0a2.\x20Toca\x20Dispositivos\x20vinculados.\x0a3.\x20Vincular\x20un\x20dispositivo.\x0a4.\x20Vincular\x20con\x20número\x20de\x20teléfono.\x0a5.\x20Pegar\x20el\x20código\x20a\x20continuación.',
+        '🚀\x20*💖 𝙹𝚊𝚍𝚒𝙱𝚘𝚝\x20-\x20DiablaBot-MD ♨️*\x0a\x0aInicia\x20sesión\x20con\x20este\x20código\x20para\x20convertirte\x20en\x20un\x20bot\x20temporal\x0a\x0a1.\x20Haga\x20click\x20en\x20los\x20tres\x20puntos\x20en\x20la\x20esquina\x20superior\x20derecha.\x0a2.\x20Toca\x20Dispositivos\x20vinculados.\x0a3.\x20Vincular\x20un\x20dispositivo.\x0a4.\x20Vincular\x20con\x20número\x20de\x20teléfono.\x0a5.\x20Pegar\x20el\x20código\x20a\x20continuación.',
         'iXDOZ',
         'close',
         'EABAy',
