@@ -24,7 +24,6 @@ contextInfo: {
 forwardingScore: 9999, 
 isForwarded: true, 
 externalAdReply: {
-title: gcname,
 thumbnailUrl: 'https://telegra.ph/file/5363728046674b1dd80a4.jpg',
 sourceUrl: linkgc,
 mediaType: 1,
