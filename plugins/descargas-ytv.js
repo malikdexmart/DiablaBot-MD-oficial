@@ -6,7 +6,7 @@ var handler = async (m, { conn, args, usedPrefix, command }) => {
 if (!args[0]) return conn.reply(m.chat, `🚫 𝐄𝐑𝐑𝐎𝐑 🚫 *іᥒgrᥱsᥱ ᥙᥒ ᥱᥒᥣᥲᥴᥱ ძᥱ ᥡ᥆ᥙ𝗍ᥙᑲᥱ*\n\n[ 💡 ] ᥱȷᥱm⍴ᥣ᥆, !${command} https://youtu.be/85xI8WFMIUY`, m, fake, )
 
 
-await conn.reply(m.chat, `🚫 𝐀𝐓𝐄𝐍𝐂𝐈𝐎𝐍 🚫 ᥱs⍴ᥱrᥱ ᥙᥒ m᥆mᥱᥒ𝗍᥆`, m, fake, )
+await conn.reply(m.chat, `🌠 𝐀𝐓𝐄𝐍𝐂𝐈𝐎𝐍 🌠 𝐄𝐬𝐩𝐞𝐫𝐞 𝐮𝐧 𝐦𝐨𝐦𝐞𝐧𝐭𝐨..`, m, fake, )
 
 try {
 
