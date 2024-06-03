@@ -69,3 +69,5 @@ resultSearch.push({title: title, link: link})
 })
 return resultSearch
 }
+
+// By EnzitoOFICIAL 
