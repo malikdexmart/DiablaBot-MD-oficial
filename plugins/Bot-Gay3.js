@@ -8,15 +8,15 @@ let handler = async (m, { conn, command, text, usedPrefix }) => {
         let { title, description, thumbnail, videoId, timestamp, views, ago, url } = vid
         //const url = 'https://www.youtube.com/watch?v=' + videoId
         m.react('💌')
-        let play = `┏━━━━━━━━━━━━━━━━━━━
+        let play = `┏──────•◈•──────╮
  📌 *Título* : ${title}
-┃ ━ ━ ━ ━ ━ ━ ━ ━ ━ ━ ━ ━ ━   
+┃ ✧ » ◇ « ✧ » ✦ « ✧ » ◇ « ✧ 
  📆 *Publicado:* ${ago}
-┃━ ━ ━ ━ ━ ━ ━ ━ ━ ━ ━ ━ ━ 
+┃✧ » ◇ « ✧ » ✦ « ✧ » ◇ « ✧
  ⌚ *Duración:* ${timestamp}
-┃ ━ ━ ━ ━ ━ ━ ━ ━ ━ ━ ━ ━ ━ 
+┃ ✧ » ◇ « ✧ » ✦ « ✧ » ◇ « ✧
  👀 *Vistas:* ${views}
-┗━━━━━━━━━━━━━━━━━━━`
+┗───── • ◆ • ─────╯`
  await conn.sendButton(m.chat, play, fgig, thumbnail, [
     ['🍧 𝐀𝐔𝐃𝐈𝐎 💫', `${usedPrefix}fgmp3 ${url}`],
     ['🍿 𝐕𝐈𝐃𝐄𝐎 ✨', `${usedPrefix}fgmp4 ${url}`]
