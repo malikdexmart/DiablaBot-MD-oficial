@@ -168,8 +168,8 @@ const pp = await conn.profilePictureUrl(conn.user.jid).catch(_ => 'https://teleg
 
 await conn.reply(m.chat, '🌸𝑪𝒂𝒓𝒈𝒂𝒏𝒅𝒐 𝑴𝒆𝒏𝒖 𝑬𝒔𝒑𝒆𝒓𝒆ღ√. . .💥', fkontak, { contextInfo:{ forwardingScore: 2022, isForwarded: true, externalAdReply: {title: '🍁 𝓓𝓘𝓐𝓑𝓛𝓐 - 𝓑𝓞𝓣 - 𝓜𝓓 🌸', body: '👋 Hola ' + name, sourceUrl: global.md, thumbnail: await (await fetch(pp)).buffer() }}})
     
-    let pp1 = 'https://telegra.ph/file/09d7c961ea9dddb3fb762.mp4'
-    let pp2 = 'https://telegra.ph/file/09d7c961ea9dddb3fb762.mp4'
+    let pp1 = 'https://telegra.ph/file/82c427c14459b67e70bb5.jpg'
+    let pp2 = 'https://telegra.ph/file/7dd82e8b4626b1aec9c0c.jpg'
 
 
     conn.sendMessage(m.chat, { video: { url: [pp1, pp2].getRandom() }, gifPlayback: true, caption: text.trim(), mentions: [m.sender] }, { quoted: m }) 
