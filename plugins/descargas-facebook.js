@@ -7,7 +7,7 @@ let vid
 const isCommand7 = /^(facebook|fb|facebookdl|fbdl)$/i.test(command)
 
 async function reportError(e) {
-await conn.reply(m.chat, `🚩 *Ocurrió un fallo*`, m, fake, )
+await conn.reply(m.chat, `📌 *𝑶𝒄𝒖𝒓𝒓𝒊𝒐 𝒖𝒏 𝒇𝒂𝒍𝒍𝒐*`, m, fake, )
 console.log(`🚩 ERROR EN: ${usedPrefix + command} ⚠️\n`)
 console.log(e)
 }
