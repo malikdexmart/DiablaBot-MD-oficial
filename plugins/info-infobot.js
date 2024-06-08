@@ -19,7 +19,7 @@ import { generateWAMessageFromContent } from '@whiskeysockets/baileys'
  let neww = performance.now() 
  let pp = './storage/logos/Menu1.jpg' 
  let speed = neww - old 
- let info = `┏━━━━━━━━━━━━━━━━━
+ let info = `┏•━•━•━ ◎ ━•━•━•┓
 ┃ ꨄ *CREADOR* 
 ┃ *Enzito*
  
@@ -55,7 +55,7 @@ import { generateWAMessageFromContent } from '@whiskeysockets/baileys'
  
 ┃  ꨄ *RESTRICT:* 
 ┃ ${restrict ? '*Habilitado ✅*' : '*Deshabilitado ❌*'}
-┗━━━━━━━━━━━━━━━━━━━━━━━━━━━
+┗•━•━•━ ◎ ━•━•━•┛
 `.trim()  
   conn.sendMessage(m.chat, { text: info, contextInfo: { externalAdReply: { title: '', body: 'DiablaBot-MD🌹', thumbnail: imagen2, sourceUrl: '', mediaType: 1, renderLargerThumbnail: true }}})
  } 
