@@ -21,21 +21,21 @@ let groups = Object.entries(conn.chats).filter(([jid, chat]) => jid.endsWith('@g
 
 
 let texto = `┏━━━━━━━━━━━${wm}━━━━━━━━━━
-┃ *🚀 𝐕𝐞𝐥𝐨𝐜𝐢𝐝𝐚𝐝*
+┃ *🌸 𝐕𝐞𝐥𝐨𝐜𝐢𝐝𝐚𝐝*
 ┃ • ${latensi.toFixed(4)}
 
 ┃ *⏰ 𝐀𝐜𝐭𝐢𝐯𝐢𝐝𝐚𝐝*
 ┃ • ${muptime}
 
-┃ *💌 𝐂𝐡𝐚𝐭𝐬*
+┃ *💬 𝐂𝐡𝐚𝐭𝐬*
 ┃ • ${chats.length} *Chats privados*
 ┃ • ${groups.length} *Grupos*
 
-┃ *💻 𝐒𝐞𝐫𝐯𝐢𝐝𝐨𝐫*
+┃ *🌠 𝐒𝐞𝐫𝐯𝐢𝐝𝐨𝐫*
 ┃ • *Ram:* ${format(totalmem() - freemem())} / ${format(totalmem())}
 ┗━━━━━━━━━━━━${wm}━━━━━━━━━━━`.trim()
 
-conn.sendMessage(m.chat, { text: texto, contextInfo: { externalAdReply: { title: '', body: '🦋 𝐃𝐈𝐀𝐁𝐋𝐀 - 𝐁𝐎𝐓 - 𝐌𝐃 🌠', thumbnailUrl: 'https://telegra.ph/file/85f8353fcfc22965f1107.jpg', sourceUrl: '', mediaType: 1, renderLargerThumbnail: true }}})
+conn.sendMessage(m.chat, { text: texto, contextInfo: { externalAdReply: { title: '', body: '🦋 𝐃𝐈𝐀𝐁𝐋𝐀 - 𝐁𝐎𝐓 - 𝐌𝐃 🌠', thumbnailUrl: 'https://telegra.ph/file/a63b06ecee0c43785583b.jpg', sourceUrl: '', mediaType: 1, renderLargerThumbnail: true }}})
 
 }
 handler.help = ['ping']
