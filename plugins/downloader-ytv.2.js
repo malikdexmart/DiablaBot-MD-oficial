@@ -27,5 +27,5 @@ const handler = async (m, {conn, args}) => {
     }
   }
 };
-handler.command = /^ytmp4doc|ytvdoc|playdoc2|ytmp4.2|ytv.2$/i;
+handler.command = /^ytmp4doc|ytvdoc|play2doc|ytmp4.2|ytv.2$/i;
 export default handler;
