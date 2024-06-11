@@ -17,7 +17,7 @@ return conn.reply(m.chat, `*🚫 𝐄𝐑𝐑𝐎𝐑 🚫 ᥆ᥴᥙrrі᥆ ᥙ�
 }
 
 }
-handler.command = ['bard']
+handler.command = ['ia']
 handler.help = ['bard']
 handler.tags = ['ai']
 
