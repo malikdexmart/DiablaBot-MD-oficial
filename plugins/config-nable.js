@@ -251,7 +251,7 @@ case 'antistickers':
 case 'antisticker':
 case 'antipegatina':
 if (m.isGroup) {
- || isOwner)) {
+if (!(isAdmin || isOwner)) {
 throw false
 }}
 chat.antiSticker = isEnable
@@ -328,7 +328,7 @@ _${usedPrefix + command} *autoread*_
 _${usedPrefix + command} *modejadibot*_`, m, fake, )
 throw false
 }
-  conn.sendMessage(m.chat, {text: `ꨄ 🍭 𝙊𝙥𝙘𝙞𝙤𝙣: ${type}\nꨄ 🪷 𝙀𝙨𝙩𝙖𝙙𝙤: ${isEnable ? 'Activado' : 'Desactivado'}\nꨄ 🌠 𝙋𝙖𝙧𝙖: ${isAll ? 'Este Bot' : isUser ? '' : 'Este chat'}`}, {quoted: m});
+  conn.sendMessage(m.chat, {text: `*◇ OPCION:* ${type}\n*◇ ESTADO:* ${isEnable ? 'ACTIVADO' : 'DESACTIVADO/A'}\n*◇ PARA:* ${isAll ? 'ESTE BOT' : isUser ? '' : 'ESTE CHAT'}`}, {quoted: m});
 }
 handler.help = ['en', 'dis'].map(v => v + 'able')
 handler.tags = ['nable', 'owner']
