@@ -251,7 +251,7 @@ case 'antistickers':
 case 'antisticker':
 case 'antipegatina':
 if (m.isGroup) {
-if (!(isAdmin || isOwner)) {
+ || isOwner)) {
 throw false
 }}
 chat.antiSticker = isEnable
