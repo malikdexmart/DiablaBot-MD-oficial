@@ -1,6 +1,7 @@
 import axios from 'axios'
 
-const OMDB_API_KEY = '703e37b8'
+const TMDB_API_KEY = '703e37b8'
+const LANGUAGE = 'es' 
 
 var handler = async (m, { text, usedPrefix, command, conn }) => {
   if (!text) return conn.reply(m.chat, `🎌 *Ingrese el nombre de una película*\n\nEjemplo, ${usedPrefix}${command} merlina`, m)
@@ -17,7 +18,7 @@ var handler = async (m, { text, usedPrefix, command, conn }) => {
   }
 
   if (!results || results.length === 0) return conn.reply(m.chat, '🚩 *Sin resultados*', m)
-  const res = results.map((v) => `⬡ *Nombre:* ${v.Title}\n⬡ *Año:* ${v.Year}\n⬡ *IMDB ID:* ${v.imdbID}\n⬡ *Tipo:* ${v.Type}`).join('\n\n───────────────\n\n')
+  const res = results.map((v) => `⬡ *Nombre:* ${v.title}\n⬡ *Año:* ${v.release_date ? v.release_date.split('-')[0] : 'N/A'}\n⬡ *Descripción:* ${v.overview}\n⬡ *Enlace:* https://www.themoviedb.org/movie/${v.id}`).join('\n\n───────────────\n\n')
   const ads = '⬡ *Bloqueador de anuncios recomendado:* Block This\n⬡ *Enlace:* https://block-this.com/block-this-latest.apk\n\n≣≣≣≣≣≣≣≣≣≣≣≣≣≣≣≣≣≣≣≣≣≣≣≣≣≣≣≣≣≣≣\n\n'
   await conn.sendMessage(m.chat, { text: ads + res, contextInfo: { externalAdReply: { mediaType: 1, renderLargerThumbnail: true, thumbnailUrl: img, title: 'Resultados de búsqueda' }}})
 }
@@ -32,9 +33,15 @@ export default handler
 
 async function searchMovie(query) {
   try {
-    const response = await axios.get(`http://www.omdbapi.com/?s=${query}&apikey=${OMDB_API_KEY}`)
-    if (response.data.Response === 'True') {
-      return response.data.Search
+    const response = await axios.get(`https://api.themoviedb.org/3/search/movie`, {
+      params: {
+        api_key: TMDB_API_KEY,
+        query: query,
+        language: LANGUAGE
+      }
+    })
+    if (response.data.results) {
+      return response.data.results
     } else {
       return []
     }
