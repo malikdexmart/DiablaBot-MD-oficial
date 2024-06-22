@@ -19,7 +19,7 @@ var handler = async (m, { text, usedPrefix, command, conn }) => {
   if (results.length === 0) return conn.reply(m.chat, '🚩 *Sin resultados*', m)
   const res = results.map((v) => `⬡ *Nombre:* ${v.Title}\n⬡ *Año:* ${v.Year}\n⬡ *IMDB ID:* ${v.imdbID}\n⬡ *Tipo:* ${v.Type}`).join('\n\n───────────────\n\n')
   const ads = '⬡ *Bloqueador de anuncios recomendado:* Block This\n⬡ *Enlace:* https://block-this.com/block-this-latest.apk\n\n≣≣≣≣≣≣≣≣≣≣≣≣≣≣≣≣≣≣≣≣≣≣≣≣≣≣≣≣≣≣≣\n\n'
-  await conn.sendMessage(m.chat, ads + res, { externalAdReply: { mediaType: 1, renderLargerThumbnail: true, thumbnailUrl: img, title: 'Resultados de búsqueda' }})
+  await conn.sendMessage(m.chat, { text: ads + res, contextInfo: { externalAdReply: { mediaType: 1, renderLargerThumbnail: true, thumbnailUrl: img, title: 'Resultados de búsqueda' }}})
 }
 
 handler.help = ['pelisplus']
