@@ -3,7 +3,7 @@ import axios from 'axios'
 const OMDB_API_KEY = '703e37b8'
 
 var handler = async (m, { text, usedPrefix, command, conn }) => {
-  if (!text) return conn.reply(m.chat, `🎌 *Ingrese el nombre de una película*\n\nEjemplo, !${command} merlina`, m)
+  if (!text) return conn.reply(m.chat, `🎌 *Ingrese el nombre de una película*\n\nEjemplo, ${usedPrefix}${command} merlina`, m)
   conn.reply(m.chat, '⏰ Espere un momento', m)
   let results
   let img
@@ -16,7 +16,7 @@ var handler = async (m, { text, usedPrefix, command, conn }) => {
     return conn.reply(m.chat, '🚩 *Error al buscar la película*', m)
   }
 
-  if (results.length === 0) return conn.reply(m.chat, '🚩 *Sin resultados*', m)
+  if (!results || results.length === 0) return conn.reply(m.chat, '🚩 *Sin resultados*', m)
   const res = results.map((v) => `⬡ *Nombre:* ${v.Title}\n⬡ *Año:* ${v.Year}\n⬡ *IMDB ID:* ${v.imdbID}\n⬡ *Tipo:* ${v.Type}`).join('\n\n───────────────\n\n')
   const ads = '⬡ *Bloqueador de anuncios recomendado:* Block This\n⬡ *Enlace:* https://block-this.com/block-this-latest.apk\n\n≣≣≣≣≣≣≣≣≣≣≣≣≣≣≣≣≣≣≣≣≣≣≣≣≣≣≣≣≣≣≣\n\n'
   await conn.sendMessage(m.chat, { text: ads + res, contextInfo: { externalAdReply: { mediaType: 1, renderLargerThumbnail: true, thumbnailUrl: img, title: 'Resultados de búsqueda' }}})
