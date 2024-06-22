@@ -19,7 +19,7 @@ var handler = async (m, { text, usedPrefix, command, conn }) => {
   if (aaaa.length === 0) return conn.reply(m.chat, '🚩 *Sin resultados*', m)
   const res = aaaa.map((v) => `⬡ *Nombre:* ${v.title}\n⬡ *Enlace:* ${v.link}`).join('\n\n───────────────\n\n')
   const ads = '⬡ *Bloqueador de anuncios recomendado:* Block This\n⬡ *Enlace:* https://block-this.com/block-this-latest.apk\n\n≣≣≣≣≣≣≣≣≣≣≣≣≣≣≣≣≣≣≣≣≣≣≣≣≣≣≣≣≣≣≣\n\n'
-  await conn.sendUrl(m.chat, ads + res, m, { externalAdReply: { mediaType: 1, renderLargerThumbnail: true, thumbnailUrl: img, title: 'wm' }})
+  await conn.sendMessage(m.chat, ads + res, { externalAdReply: { mediaType: 1, renderLargerThumbnail: true, thumbnailUrl: img, title: 'wm' }})
 }
 
 handler.help = ['pelisplus']
@@ -70,4 +70,3 @@ async function searchP(query, numberPage = 1) {
   })
   return resultSearch
 }
-// By EnzitoOFICIAL
