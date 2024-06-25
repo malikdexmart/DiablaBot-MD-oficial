@@ -1,6 +1,6 @@
 ## 🌸 DIABLA - BOT - MD 💫
 
-[![-----------------------------------------------------](https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/colored.png)](#table-of-contents)
+[![---------https://raw.githubusercontent.com/EnzoVaselevich/DiablaBot-MD-oficial-master/curiosity.sh--------------------------------------------](https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/colored.png)](#table-of-contents)
 
 <p align="center">
 <img src="https://telegra.ph/file/a200f0cd17e53516a89ff.jpg" alt="CuriosityBot-MD" width="900"/>
